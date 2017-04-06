@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/mainScreenImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/ic_battery_charging_full_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/mainScreenCatName"
+        android:text="Category"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/black"
+        android:layout_weight="99.90"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:textAlignment="viewStart" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        />
+
+</LinearLayout>
