@@ -1,4 +1,4 @@
-package com.noman.donateit;
+package com.noman.donateit.adapters;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.noman.donateit.data.MainScreenCategory;
+import com.noman.donateit.R;
 
 import java.util.List;
 

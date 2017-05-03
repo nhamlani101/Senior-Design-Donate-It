@@ -1,4 +1,4 @@
-package com.noman.donateit;
+package com.noman.donateit.data;
 
 /**
  * Created by noman on 3/28/17.

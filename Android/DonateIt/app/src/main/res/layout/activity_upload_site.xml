@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="17dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userNameTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/userNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/organNameTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userNameTI">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/organET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Organization Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/typeTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/organNameTI">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/typeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Donation Type" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/typeTI"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom|clip_vertical"
+            android:background="@color/colorAccent"
+            android:elevation="10dp"
+            android:text="Submit"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/imageViewImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+</com.flipboard.bottomsheet.BottomSheetLayout>
